@@ -5,3 +5,87 @@
     font-family: "Alata", sans-serif;
     line-height: 100%;
 }
+
+/* Estilização do HEADER */
+
+header{
+    background-color: rgb(99, 60, 9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.75rem 5rem;
+}
+
+.titulo{
+    color:burlywood;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+header nav a{
+    color: #deb887;
+    font-size: 1.25rem;
+}
+
+header nav a:hover{
+    color: rgb(128, 105, 75);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+/* Estilização do FOOTER */
+
+footer{
+    background-color: rgb(99, 60, 9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.75rem 5rem;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+footer nav img{
+    height: 2rem;
+    width: 2rem;
+    background-color: #deb887;
+    border: none;
+    border-radius: 50%;    
+}
+
+footer nav img:hover{
+    background-color: rgb(128, 105, 75);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.botaoContato button{
+    height: 2.5rem;
+    width: 9rem;
+    border: none;
+    border-radius: .3rem;
+    color: rgb(99, 60, 9);
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: #deb887;
+}
+
+.botaoContato button:hover{
+    background-color: rgb(128, 105, 75);
+    color: black;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
