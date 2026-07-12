@@ -11,14 +11,109 @@
         <div class="titulo">
             <p>Bruno Fortuna Cabo</p>
         </div>
+        <input type="checkbox" id="menuToggle" class="menuToggle">
+        <label for="menuToggle" class="menuIcone"></label>
         <nav class="menu">
-            <a href="#">Quem Sou</a>
-            <a href="#">Hobbies</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#biografia">Quem Sou</a>
+            <a href="#listas">Hobbies</a>
+            <a href="#projeto">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
     <main>
+        <section id="biografia">
+            <div class="fotoPerfil">
+                <img src="./midia/fotoBruno.jpg">
+            </div>
+            <div class="sobreMim">
+                <p class="subtitulos">Sobre Mim</p>
+                <p>Atualmente estou entre o quarto e quinto período do curso de Sistemas da Informação, indo para o sexto. Escolhi essa área porque gosto bastante de tudo que envolve computador, desde jogar, programar e até mexer nas peças, e até agora estou bastante satisfeito com minha escolha! Nas horas livres gosto de jogar ou só falar com amigos no computador e assistir esporte (NBA ou jogo do Flamengo quando tem, por exemplo), mas pretendo voltar a ver séries mais frequentemente também, algo que perdi com a correria da rotina.</p>
+            </div>
+        </section>
+
+        <section id="listas">
+            <div class="hobbies">
+                <p class="subtitulos" id="nomeReverso">Meus Hobbies</p>
+                <div class="cards" id="cardsReverso">
+                    <div class="cardEsportes">
+                        <p class="tituloCard">Esportes</p>
+                    </div>
+                    <div class="cardMusica">
+                        <p class="tituloCard">Ouvir Música</p>
+                    </div>
+                    <div class="cardComputador">
+                        <p class="tituloCard">Jogos</p>
+                    </div>
+                    <div class="cardSeries">
+                        <p class="tituloCard">Séries/Filmes</p>
+                    </div>
+                    <div class="cardAmigos">
+                        <p class="tituloCard">Amigos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="top5">
+                <p class="subtitulos">Top 5 jogos que joguei recentemente</p>
+                <div class="cards">
+                    <div class="cardEldenRing">
+                        <p class="tituloCard">Elden Ring</p>
+                        <p class="rankingTop">1</p>
+                    </div>
+                    <div class="cardSubnautica">
+                        <p class="tituloCard">Subnautica</p>
+                        <p class="rankingTop">2</p>
+                    </div>
+                    <div class="cardRDR2">
+                        <p class="tituloCard">RDR 2</p>
+                        <p class="rankingTop">3</p>
+                    </div>
+                    <div class="cardDarkSouls">
+                        <p class="tituloCard">Dark Souls 3</p>
+                    </div>
+                    <div class="cardCivilization">
+                        <p class="tituloCard">Civilization 6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto">
+            <div class="cardProjeto">
+                <div class="fotoProjeto">
+                    <img src="./midia/fotoNintendo.png">
+                </div>
+                <div class="sobreProjeto">
+                    <p class="titulos">Banco de Dados Nintendo</p>
+                    <p>Projeto sobre análise de dados feito na UFF baseado na Nintendo</p>
+                </div>
+            </div>
+            <div class="textosProjeto">
+                <div class="descricaoProjeto">
+                    <p class="titulos">Descrição:</p>
+                    <p>Recentemente, fiz uma disciplina focada em análise de dados que tinha como avaliação final um trabalho. Os grupos deveriam escolher um tema para colher, tratar e analisar os dados a respeito dele. No meu caso, ficamos encarregados de estudar as vendas da Nintendo, contendo a maioria dos consoles e títulos da empresa, assim como as notas, gêneros e entre outras características desses jogos.</p>
+                </div>
+                <div class="metodologiaProjeto">
+                    <p class="titulos">Metodologia:</p>
+                    <p>Inicialmente, baixamos o .csv completo das vendas da Nintendo por meio de um site focado em estudo de dados, transformando esse arquivo em um banco de dados. Posteriormente, fomos tratando as informações que tinhamos para remover/atualizar valores, como títulos duplicados, diversas linhas como Null e etc. Por fim, reunimos diversas métricas a partir de análises feitas em cima desse banco de dados no PowerBI, resultando em uma apresentação bem interessante e cheia de curiosidades sobre as vendas da Nintendo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="textosContato">
+            <p class="titulos">Entre em Contato!</p>
+            <p>Caso tenha alguma observação ou dúvida, não hesite em mandar uma mensagem para o desenvolvedor usando o formulário ao lado! Ficarei muito feliz em receber seu feedback ou sanar alguma dúvida que possa ter surgido.</p>
+            </div>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required>
+                <label for="assunto">Assunto:</label>
+                <input type="text" name="assunto" required>
+                <label for="mensagem">Descrição</label>
+                <textarea name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <nav>
