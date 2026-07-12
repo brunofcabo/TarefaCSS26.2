@@ -4,4 +4,563 @@
     text-decoration: none;
     font-family: "Alata", sans-serif;
     line-height: 100%;
+    --corPrincipal: rgb(99, 60, 9);
+    --corSecundaria: burlywood;
+}
+
+.titulos{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitulos{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Estilização do HEADER */
+
+header{
+    background-color: var(--corPrincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.75rem 5rem;
+    box-shadow: 0px 4px 4px 0px #00000098;
+
+}
+
+.titulo{
+    color: var(--corSecundaria);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.menuToggle{
+    display: none;
+}
+
+.menuIcone{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(./midia/iconeHamburguer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+header nav a{
+    color: var(--corSecundaria);
+    font-size: 1.25rem;
+}
+
+header nav a:hover{
+    color: rgb(128, 105, 75);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* Estilização da BIOGRAFIA */
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+#biografia{
+    background-color: var(--corSecundaria);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 15%;
+}
+
+#biografia div img{
+    object-fit: cover;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px 0px #0000009a;
+
+}
+
+.sobreMim{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 35%;
+}
+
+/* Estilização das LISTAS */
+
+#listas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+}
+
+#listas > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 45%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+#cardsReverso{
+    flex-direction: row-reverse;
+}
+
+#nomeReverso{
+    align-self: flex-end;
+}
+
+.cards > div{
+    height: 12rem;
+    max-width: 8rem;
+    width: 30%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.25rem .25rem .25rem rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-position: center;
+}
+
+.cards > div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 0.15rem solid var(--corSecundaria);
+}
+
+.tituloCard{
+    margin-bottom: 0.5rem;
+    color: var(--corSecundaria);
+    text-shadow: 0.1rem 0.1rem 0.15rem black;
+    justify-self: end;
+    font-size: 0.9rem;
+}
+
+.rankingTop{
+    align-self: flex-start;
+    color: var(--corPrincipal);
+    background-color: var(--corSecundaria);
+    padding: 0.60rem 0.25rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+    margin-left: 10%;
+}
+
+.cardEsportes{
+    background-image: url(./midia/esporte.jpg);
+}
+
+.cardMusica{
+    background-image: url(./midia/musica.png);
+}
+
+.cardComputador{
+    background-image: url(./midia/jogar.png);
+}
+
+.cardSeries{
+    background-image: url(./midia/serie.png);
+}
+
+.cardAmigos{
+    background-image: url(./midia/amigos.jpg);
+}
+
+.cardEldenRing{
+    background-image: url(./midia/EldenRing.jpg);
+
+}
+
+.cardSubnautica{
+    background-image: url(./midia/subnautica.png);
+}
+
+.cardRDR2{
+    background-image: url(./midia/RDR2.jpg);
+}
+
+.cardDarkSouls{
+    background-image: url(./midia/darkSouls.png);
+}
+
+.cardCivilization{
+    background-image: url(./midia/civilization.jpg);
+}
+
+
+.cardEldenRing, .cardSubnautica, .cardRDR2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilização do PROJETO */
+
+
+#projeto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.cardProjeto{
+    min-width: 20rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fotoProjeto img{
+    object-fit: cover;
+    height: 15rem;
+    width: 70%;
+    border-radius: 1rem;
+    box-shadow: 0.25rem .25rem .25rem rgba(0, 0, 0, 0.514);
+}
+
+
+.sobreProjeto{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.textosProjeto{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.textosProjeto > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Estilização do FORMULÁRIO */
+
+#contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 2rem;
+}
+
+.textosContato{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    gap: 1.25rem;
+}
+
+#contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    width: 50%;
+}
+
+#contato form label{
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+#contato form input{
+    color: var(--corPrincipal);
+    border: none;
+    background-color: var(--corSecundaria);
+    border-radius: 0.4rem;
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+#contato form textarea{
+    color: var(--corPrincipal);
+    resize: none;
+    border: none;
+    background-color: var(--corSecundaria);
+    border-radius: 0.4rem;
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+#contato form button{
+    align-self: flex-end;
+    height: 2.5rem;
+    width: 15%;
+    min-width: 8rem;
+    border: none;
+    border-radius: .3rem;
+    color: var(--corSecundaria);
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: var(--corPrincipal);
+}
+
+#contato form button:hover{
+    background-color: var(--corSecundaria);
+    color: black;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* Estilização do FOOTER */
+
+footer{
+    background-color: var(--corPrincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.75rem 5rem;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+footer nav img{
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--corSecundaria);
+    border: none;
+    border-radius: 50%;    
+}
+
+footer nav img:hover{
+    background-color: rgb(128, 105, 75);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.botaoContato button{
+    height: 2.5rem;
+    width: 9rem;
+    border: none;
+    border-radius: .3rem;
+    color: var(--corPrincipal);
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: var(--corSecundaria);
+}
+
+.botaoContato button:hover{
+    background-color: rgb(128, 105, 75);
+    color: black;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+@media(max-width: 900px){
+    header p{
+        font-size: 1.25rem;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--corPrincipal);
+        padding: 0.8rem 2rem 0.5rem 2rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+        box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.596);
+        position: absolute;
+        top: 8.8%;
+        right: 0;
+    }
+
+    header nav a{
+        font-size: 1rem;
+    }
+
+    .menuIcone{
+        display: block;
+        position: absolute;
+        right: 3%
+    }
+
+    .menuToggle:checked + .menuIcone + .menu{
+        display: flex;
+    }
+
+    .menuToggle:checked + .menuIcone{
+        background-image: url(./midia/iconeFechar.png);
+    }
+
+    #biografia, #listas{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sobreMim{
+        width: 60%;
+    }
+
+    #listas > div{
+        width: 100%;
+        gap: 1rem;
+    }
+
+    #listas > div p{
+        margin-left: 1rem;
+    }
+
+    .cards, #cardsReverso{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .cards > div{
+        max-width: none;
+        width: 90%;
+    }
+
+    .rankingTop{
+        margin-left: 3%;
+    }
+
+    .tituloCard{
+        font-size: 1rem;
+    }
+
+    #nomeReverso{
+        align-self: flex-start;
+    }
+
+    #projeto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .cardProjeto{
+        min-width: none;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .fotoProjeto{
+        width: 90%;
+    }
+    
+    .fotoProjeto img{
+        width: 100%;
+    }
+
+    .sobreProjeto{
+        width: 90%;
+    }
+
+    .textosProjeto{
+        width: 90%;
+    }
+
+
+    #contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    
+    .textosContato{
+        width: 90%;
+    }
+
+    #contato form{
+        width: 90%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .cardEsportes{
+        background-image: url(./midia/coverEsporte.jpg);
+
+    }
+
+    .cardMusica{
+        background-image: url(./midia/coverMusica.png);
+    }
+
+    .cardComputador{
+        background-image: url(./midia/coverjogar.png);
+
+    }
+
+    .cardSeries{
+        background-image: url(./midia/coverSerie.png);
+
+    }
+
+    .cardAmigos{
+        background-image: url(./midia/coverAmigos.jpg);
+    }
+
+    .cardEldenRing{
+        background-image: url(./midia/coverEldenRing.jpg);
+
+    }
+
+    .cardSubnautica{
+        background-image: url(./midia/coverSubnautica.jpg);
+
+    }
+
+    .cardRDR2{
+        background-image: url(./midia/coverRDR2.jpg);
+
+    }
+
+    .cardDarkSouls{
+        background-image: url(./midia/coverDarkSouls.jpg);
+
+    }
+
+    .cardCivilization{
+        background-image: url(./midia/coverCivilization.jpg);
+
+    }
 }
